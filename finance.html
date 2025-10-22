@@ -1,45 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Finance — Warner West</title>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warner West – Finance</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="dark pages">
-  <canvas id="matrix"></canvas>
-  <div id="overlay">
-    <a class="back" href="index.html">← Back</a>
-    <main class="container">
-      <h2>Financials & Projections</h2>
-      <p class="lead">Conservative Year 1 revenue mix and 5-year growth targets.</p>
 
-      <section class="card numbers">
-        <div class="num">
-          <h4 data-target="240000000">$0</h4>
-          <p>Park Revenue (Y1)</p>
-        </div>
-        <div class="num">
-          <h4 data-target="72000000">$0</h4>
-          <p>Streaming (Y1)</p>
-        </div>
-        <div class="num">
-          <h4 data-target="150000000">$0</h4>
-          <p>Hotels & Casinos (Y1)</p>
-        </div>
-        <div class="num">
-          <h4 data-target="500000000">$0</h4>
-          <p>Estimated Total Revenue (Y1)</p>
-        </div>
-      </section>
-
-      <section class="card">
-        <h3>Capital Structure</h3>
-        <p>Target Phase 1 raise: <strong>$2.5B equity + $1.5B debt</strong>. Use of funds phased to reduce risk. Pre-sell resort naming rights and secure long-term streaming subscribers at launch.</p>
-      </section>
-    </main>
-    <footer class="footer"><a href="contact.html" class="btn">Contact →</a></footer>
+<body>
+  <div class="page-content">
+    <h1>Financial Vision</h1>
+    <p>5-Year Revenue Projection:</p>
+    <table>
+      <tr>
+        <th>Year</th>
+        <th>Revenue (USD)</th>
+        <th>Visitors</th>
+        <th>Subscribers</th>
+      </tr>
+      <tr><td>1</td><td>$180M</td><td>1.2M</td><td>250K</td></tr>
+      <tr><td>2</td><td>$320M</td><td>2.1M</td><td>750K</td></tr>
+      <tr><td>3</td><td>$550M</td><td>3.6M</td><td>1.8M</td></tr>
+      <tr><td>4</td><td>$790M</td><td>5.1M</td><td>3.2M</td></tr>
+      <tr><td>5</td><td>$1.05B</td><td>6.4M</td><td>4.7M</td></tr>
+    </table>
+    <a href="contact.html" class="nav-btn">Next: Contact</a>
   </div>
-  <script src="assets/js/main.js"></script>
+
+  <button id="audio-toggle">🔊</button>
+
+  <script src="matrix.js"></script>
+  <script src="typewriter.js"></script>
+  <script src="audio.js"></script>
+  <script src="transitions.js"></script>
 </body>
 </html>
