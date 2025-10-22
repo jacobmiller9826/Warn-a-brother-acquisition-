@@ -1,55 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Warner West — Enter The West</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warner West – Enter the Rebirth</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="dark">
+
+<body>
   <canvas id="matrix"></canvas>
 
-  <div id="overlay">
-    <header class="hero">
-      <h1 class="title">WARNER WEST</h1>
-      <p class="subtitle typewriter" data-text="Reimagining the stories you grew up with — for grown-ups.">Reimagining the stories you grew up with — for grown-ups.</p>
-      <div class="cta-row">
-        <a class="btn" href="vision.html">Enter The Dossier</a>
-        <button id="sound-toggle" class="btn ghost">Sound: ON</button>
-      </div>
-    </header>
-
-    <nav class="nav">
-      <a href="vision.html">Vision</a>
-      <a href="development.html">Development</a>
-      <a href="finance.html">Finance</a>
-      <a href="partners.html">Partners</a>
-      <a href="press.html">Press Kit</a>
-      <a href="legal.html">Legal</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-    <div class="controls" aria-hidden="false">
-      <label for="theme-select">Color:</label>
-      <select id="theme-select" class="control">
-        <option value="matrix">Matrix Green</option>
-        <option value="cyber">Cyber Blue</option>
-        <option value="violet">Neon Violet</option>
-      </select>
-
-      <label for="glyph-select">Glyphs:</label>
-      <select id="glyph-select" class="control">
-        <option value="katakana">Katakana</option>
-        <option value="ascii">ASCII</option>
-        <option value="runes">Runes</option>
-      </select>
-    </div>
-
-    <footer class="footer">Built by Jacob Miller • Warner West — Casa Grande</footer>
+  <div class="intro">
+    <h1 id="title">ENTER THE WEST</h1>
+    <p id="subtitle">The Rebirth of Imagination Begins in Casa Grande</p>
+    <a href="vision.html" class="enter-btn">ENTER</a>
   </div>
 
-  <script src="assets/js/main.js"></script>
+  <button id="audio-toggle">🔊</button>
+
+  <script src="matrix.js"></script>
+  <script src="typewriter.js"></script>
+  <script src="audio.js"></script>
+  <script src="transitions.js"></script>
 </body>
 </html>
